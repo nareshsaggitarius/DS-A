@@ -1,0 +1,115 @@
+Git commands
+
+To install git on mac- type git version in terminal
+and then create a repository on github.com
+
+after doing that
+type
+git config --global user.name "nareshjreweb"
+git config --global user.email "naresh.jreweb@gmail.com"
+
+and once done
+type
+git config --global --list
+
+
+to clone ur respository
+git clone https://github.com/nareshjreweb/github-naresh-development.git
+
+to check status
+git status
+
+
+git status
+Local
+working-> staging -> repository
+remote
+
+to create file
+echo "naresh">>abc.txt
+
+to add file to staging area
+git add abc.txt
+
+to backout files from staging area
+git reset abc.txt
+
+to commit file
+git commit -m "Adding start text file"
+
+if we do git status
+it will show that our local repository is one commit ahead of master directory
+
+to commit file to master repository(on browser)
+git push origin master
+
+to delete file from local
+git rm file.txt
+
+git init fresh-project
+
+
+
+initializer.com
+
+#to check log
+git log
+
+#ignore certain types of files to be added/commited
+touch .gitignore
+
+#to create a new branch
+git branch newBranch
+
+# to switch to new branch
+git checkout newBranch
+
+
+# to switch to new branch
+git checkout newBranch
+
+# to switch to master branch
+git checkout master
+
+# to merge changes
+git merge newBranch
+
+
+#git crash course
+https://www.youtube.com/watch?v=Y9XZQO1n_7c&t=265s
+
+#changes on one branch can be put on a stack 
+git stash
+
+#to bring changes from stash, 
+git stash apply
+
+
+#git remote for remote repository
+git remote
+
+#clone git 
+git clone <url>
+
+git push origin master
+
+git remote add MyRepo https://github.com/nareshsaggitarius/Test.git
+
+git remote -v
+
+$ git remote rm origin
+$ git remote add origin git@github.com:someuser/newprojectname.git
+
+find . | grep .git | xargs rm -rf
+	
+git config --global user.name "nareshsaggitarius"
+git config --global user.email "naresh_saggitarius@yahoo.co.in"
+
+
+
+
+
+
+
+
+

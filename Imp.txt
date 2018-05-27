@@ -1,0 +1,96 @@
+Maven
+local repository
+/Users/naresharora/.m2/repository/
+
+------------------------------------------
+to check environment variables on mac
+echo $PATH
+
+to set environment variables
+export PATH or export M2
+
+to delete environment variables
+unset M2
+
+------------------------------------------
+to install maven or mongodb
+use homebrew which is already installed
+
+brew install
+
+------------------------------------------
+node location
+/usr/local/bin/node
+
+npm
+/usr/local/bin/npm
+
+bower
+/usr/local/bin/bower -> /usr/local/lib/node_modules/bower/bin/bower
+
+——————————————————
+to add a user - user to sudo
+usermod -g wheel user
+
+
+——————————
+plunkr
+stackblitz
+
+—————
+javascript book
+http://jstherightway.org/
+
+--------
+hide - hidden files
+defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder
+
+show hidden files
+defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
+
+-------------
+
+set/update path
+
+touch ~/.bash_profile; open ~/.bash_profile
+
+it will open in text pad, then ctrl+q
+
+source ~/.bash_profile
+
+then echo $PATH
+------------
+
+to check port of 8080
+sudo lsof -i:8080
+
+_____________
+jenkins
+
+#config
+sudo defaults write /Library/Preferences/org.jenkins-ci httpPort 7070
+
+#stop
+sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+
+#start
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+
+or other way is
+java -jar jenkins.war --httpPort -9191
+
+#url
+localhost:7070
+---------------
+
+artifactory on docker image
+use commands to pull image
+
+#then to start the container
+start -ai 63cef898f11747c3a40d6bf3bd5bb738b6fa54a839ec3c259bf9299d8482e598
+
+#url
+http://localhost:8081/artifactory/webapp/#/home
+-------------------
+
+
